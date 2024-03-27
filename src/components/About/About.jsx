@@ -23,20 +23,21 @@ const About = () => {
             <article className="about_card">
               <GiSkills className="about_icon" />
               <h5>Skills</h5>
-              <h6>Still Developing</h6>
+              <h6>Scroll down</h6>
             </article>
 
             <article className="about_card">
               <VscFolderLibrary className="about_icon" />
               <h5>Projects</h5>
-              <h6>number is here</h6>
+
+              <h6>Scroll down</h6>
             </article>
           </div>
           <p>
-            I'm Dimple Harjani, a WebDevelopment and Designing enthusiast. With
-            a knack for creating something creative, I try to craft some of the
-            unique ideas for websites that leaves a lasting impact. When I'm not
-            immersed in doing something technical, you'll find me baking,
+            I'm Dimple Harjani, a Web Development and Web Designing enthusiast.
+            With a knack for creating something creative, I try to craft some of
+            the unique ideas for websites that leaves a lasting impact. When I'm
+            not immersed in doing something technical, you'll find me baking,
             painting and sketching. Let's connect and explore the exciting
             possibilities together!
           </p>
