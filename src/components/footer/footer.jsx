@@ -7,7 +7,7 @@ const footer = () => {
       <div className="footer-content">
         Link to the Code
         <a
-          href=" https://github.com/Dimpleh21"
+          href=" https://github.com/Dimpleh21/Portfolio_website_updated"
           target="_blank"
           className="Icon"
         >
