@@ -1,0 +1,21 @@
+.footer {
+  background-color: #16163b;
+  height: 60px;
+  margin-top: 30px;
+}
+.footer-content {
+  /* margin-top: 200px; */
+  margin-left: 550px;
+  padding-top: 30px;
+}
+.Icon {
+  padding-left: 10px;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    width: 100%;
+  }
+  .footer-content {
+    margin-left: 100px;
+  }
+}

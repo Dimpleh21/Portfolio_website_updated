@@ -2,11 +2,8 @@ import React from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/6523230.jpg";
 import IMG2 from "../../assets/6523230.jpg";
-import IMG3 from "../../assets/p3.jpg";
-import IMG4 from "../../assets/p2.jpg";
-import IMG5 from "../../assets/p4.jpg";
-import IMG6 from "../../assets/E8.png";
-import IMG7 from "../../assets/E9.png";
+import IMG3 from "../../assets/outfit.png";
+
 import IMG8 from "../../assets/p5.png";
 import IMG9 from "../../assets/p6.png";
 import IMG10 from "../../assets/p7.png";
@@ -22,17 +19,23 @@ const Portfolio = () => {
           <div className="portfolio_item-image">
             <img src={IMG3} alt="" />
           </div>
-          <h3>RevNow</h3>
+          <h3>Outfit visualizer and recommendation system-Myntra Hackerramp</h3>
           <h4>
-            A complaint register for NITH students that makes their life better
-            by making complaints more and more transparent
+            A WebGL based Virtual try on solution with trend recommendation
+            system
           </h4>
           <div className="portfolio_item-cta">
             <a
-              href="https://github.com/Dimpleh21/solutionists-project"
+              href="https://github.com/YATHAGROVER/myntra-hackerramp-submission"
               className="btn"
             >
               Github
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1QV8FZgmyzNJVRrHdrDKBy166pEWxMDVp/view"
+              className="btn btn-primary"
+            >
+              Demo
             </a>
           </div>
         </article>
@@ -52,12 +55,12 @@ const Portfolio = () => {
             >
               Github
             </a>
-            <a
+            {/* <a
               href="https://www.figma.com/file/Lp0COXGP6QZzu97tuhYoKN/Untitled?type=design&mode=design&t=RdZSNJIa2SaXrnsL-0"
               className="btn btn-primary"
             >
               Figma Link
-            </a>
+            </a> */}
           </div>
         </article>
 
@@ -75,12 +78,12 @@ const Portfolio = () => {
             <a href="https://github.com" className="btn">
               Github
             </a>
-            <a
+            {/* <a
               href="https://www.figma.com/file/Yfvkfg6gIm663ZiYKae1ry/Untitled?type=design&node-id=0-1&mode=design&t=BzWJFcFnWFirUcCF-0"
               className="btn btn-primary"
             >
               Figma Link
-            </a>
+            </a> */}
           </div>
         </article>
         <article className="portfolio_item">
@@ -99,12 +102,12 @@ const Portfolio = () => {
             >
               Github
             </a>
-            <a
+            {/* <a
               href="https://www.figma.com/file/4dNdidBp9AvEHkphSe3vL9/E-cell%2FNITH?type=design&node-id=1896-3494&mode=design&t=RdZSNJIa2SaXrnsL-0"
               className="btn btn-primary"
             >
               Figma Link
-            </a>
+            </a> */}
           </div>
         </article>
         <article className="portfolio_item">
@@ -120,12 +123,7 @@ const Portfolio = () => {
             <a href="https://github.com/Karanpal97/e-cressando" className="btn">
               Github
             </a>
-            <a
-              href="https://www.figma.com/file/4dNdidBp9AvEHkphSe3vL9/E-cell%2FNITH?type=design&node-id=1011-909&mode=design&t=RdZSNJIa2SaXrnsL-0"
-              className="btn btn-primary"
-            >
-              Figma Link
-            </a>
+
             <a
               href="https://e-crescendo.netlify.app/"
               className="btn btn-primary"
@@ -134,7 +132,7 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-        <article className="portfolio_item">
+        {/* <article className="portfolio_item">
           <div className="portfolio_item-image">
             <img src={IMG12} alt="" />
           </div>
@@ -148,7 +146,7 @@ const Portfolio = () => {
               Link to the Notion Website
             </a>
           </div>
-        </article>
+        </article> */}
       </div>
     </section>
   );

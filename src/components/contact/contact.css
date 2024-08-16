@@ -56,4 +56,14 @@ textarea {
   .container.contact_container {
     width: var(--container-width-ms);
   }
+  input,
+  textarea {
+    width: 85%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: var(--color-white);
+  }
 }

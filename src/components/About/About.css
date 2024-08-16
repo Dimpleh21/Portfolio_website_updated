@@ -15,6 +15,7 @@
 .about_me-image {
   border-radius: 2rem;
   overflow: hidden;
+
   width: 350px;
 }
 .about_me-image:hover {
@@ -68,24 +69,73 @@
   }
   .about_me {
     width: 50%;
-    margin: 2rem auto 4rem;
+    margin-top: 20px;
+  }
+  .about_me-image {
+    border-radius: 2rem;
+    margin-top: -350px;
+    margin-left: 20px;
+    overflow: hidden;
+    width: 200px;
   }
   .about_content {
-    margin: 1rem 0 1.5rem;
+    margin-top: -300px;
+  }
+  .about_content p {
+    margin-top: -160px;
+    margin-left: 90px;
+  }
+  .about_card {
+    margin-top: -300px;
+    margin-left: 70px;
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    height: 6rem;
   }
 }
 @media screen and (max-width: 600px) {
   .about_me {
-    width: 65%;
+    margin-left: 0.5rem;
+    width: 60%;
+    display: grid;
+  }
+  .about_me-image {
+    border-radius: 1rem;
+    margin-top: -340px;
+    margin-left: 70px;
+    overflow: hidden;
+    width: 140px;
   }
   .about_cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    display: none;
+  }
+  .about_card {
+    margin-top: -160px;
+    width: 20px;
+    height: 20px;
+  }
+  .about_card h5,
+  h6 {
+    display: none;
   }
   .about_content {
     text-align: center;
   }
   .about_content p {
-    margin: 1.5rem 0;
+    margin-left: -85px;
+    margin-top: 125px;
+    font-size: 10px;
+    width: 320px;
+    text-align: center;
+  }
+  .hi {
+    margin-left: -10px;
+    margin-top: -10px;
+    font-size: 8px;
+    height: 2px;
+    width: 40px;
   }
 }

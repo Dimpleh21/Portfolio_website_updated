@@ -3,25 +3,30 @@ import "./contact.css";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { CiLinkedin } from "react-icons/ci";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    const publicKey1 = "L5WNBB1lj6J-ju3CV";
     emailjs
       .sendForm("service_l7661zx", "template_pt8p1kg", form.current, {
-        publicKey: "icuv8JxprcwEwHW3i",
+        publicKey: publicKey1,
       })
       .then(
         () => {
           console.log("SUCCESS!");
+          console.log(publicKey1);
+          setMessageSent(true);
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
+          console.log(publicKey1);
         }
       );
   };
@@ -47,7 +52,7 @@ const Contact = () => {
           </article>
         </div>
 
-        <form action="" ref={form} onSubmit={sendEmail}>
+        <form action="" ref={form} onSubmit={sendEmail} className="forms">
           <input
             type="text"
             name="name"
@@ -69,8 +74,9 @@ const Contact = () => {
             placeholder="Your Message"
             id="#user_message"
           ></textarea>
+          {messageSent && <p>Message sent successfully!</p>}
           <button type="submit" className="btn btn-primary">
-            Send Message
+            {messageSent ? "MessageSent!" : "Send Message"}
           </button>
         </form>
       </div>

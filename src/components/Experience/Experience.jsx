@@ -9,7 +9,7 @@ const Experience = () => {
       <h2>My Experience</h2>
       <div className="container experience_container">
         <div className="experience_frontend">
-          <h3>Web Development</h3>
+          <h3>Development</h3>
           <div className="experience_content">
             <article className="experience_details">
               <BsPatchCheckFill className="experience_details-icon" />
@@ -98,6 +98,20 @@ const Experience = () => {
                 <h6 className="text-light"></h6>
               </div>
             </article>
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icon" />
+              <div>
+                <h4>Prisma</h4>
+                <h6 className="text-light"></h6>
+              </div>
+            </article>
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icon" />
+              <div>
+                <h4>NodeJS</h4>
+                <h6 className="text-light"></h6>
+              </div>
+            </article>
           </div>
         </div>
 
@@ -107,14 +121,14 @@ const Experience = () => {
             <article className="experience_details">
               <BsPatchCheckFill className="experience_details-icon" />
               <div>
-                <h4>Figma</h4>
+                <h4>OOPs</h4>
                 <h6 className="text-light"></h6>
               </div>
             </article>
             <article className="experience_details">
               <BsPatchCheckFill className="experience_details-icon" />
               <div>
-                <h4>Notion</h4>
+                <h4>Data Structures and Algorithms</h4>
                 <h6 className="text-light"></h6>
               </div>
             </article>
@@ -139,6 +153,13 @@ const Experience = () => {
                 <h6 className="text-light"></h6>
               </div>
             </article>
+            {/* <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icon" />
+              <div>
+                <h4></h4>
+                <h6 className="text-light"></h6>
+              </div>
+            </article> */}
           </div>
         </div>
       </div>

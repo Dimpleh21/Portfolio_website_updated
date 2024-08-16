@@ -33,15 +33,16 @@ const About = () => {
               <h6>Scroll down</h6>
             </article>
           </div>
+
           <p>
-            I'm Dimple Harjani, a Web Development and Web Designing enthusiast.
-            With a knack for creating something creative, I try to craft some of
-            the unique ideas for websites that leaves a lasting impact. When I'm
-            not immersed in doing something technical, you'll find me baking,
-            painting and sketching. Let's connect and explore the exciting
-            possibilities together!
+            I'm Dimple Harjani, a Software Development and Web Designing
+            enthusiast. With a knack for creating something creative, I try to
+            craft some of the unique ideas for websites that leaves a lasting
+            impact. When I'm not immersed in doing something technical, you'll
+            find me baking, painting and sketching. Let's connect and explore
+            the exciting possibilities together!
           </p>
-          <a href="#contact" className="btn btn-primary">
+          <a href="#contact" className="btn btn-primary hi">
             Let's Talk
           </a>
         </div>
