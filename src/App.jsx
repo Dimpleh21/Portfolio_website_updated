@@ -6,18 +6,35 @@ import Contact from "./components/contact/Contact";
 import Experience from "./components/Experience/Experience";
 import Portfolio from "./components/portfolio/portfolio";
 import Footer from "./components/footer/footer";
+import Parallax from "./components/Parallax/parallax";
+
 const App = () => {
   return (
-    <>
-      <Header />
-      <Nav />
-      {/* <About /> */}
+    <div style={{ position: "relative", zIndex: 1 }}>
+      {/* Parallax Background */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          zIndex: -1,
+        }}
+      >
+        <Parallax />
+      </div>
 
-      <Experience />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </>
+      {/* Foreground Content */}
+      <div style={{ position: "relative", zIndex: 1 }}>
+        <Header />
+        <Nav />
+        {/* <About /> */}
+        <Experience />
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </div>
+    </div>
   );
 };
 

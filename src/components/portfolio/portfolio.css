@@ -7,7 +7,7 @@
   background: var(--color-bg-variant);
   padding: 1.2rem;
   border-radius: 2rem;
-  border: 1px solid transparent;
+  border: 1px solid rgba(255, 255, 255, 0.416);
   transition: var(--transition);
 }
 .portfolio_item:hover {

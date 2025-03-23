@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import ME from "../../assets/me1.jpg";
+import ME from "../../assets/me.jpg";
 
 import { GiSkills } from "react-icons/gi";
 import { VscFolderLibrary } from "react-icons/vsc";

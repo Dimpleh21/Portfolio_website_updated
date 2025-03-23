@@ -13,10 +13,9 @@
   padding-top: 7rem;
 }
 .about_me-image {
-  border-radius: 2rem;
+  border-radius: 0rem;
   overflow: hidden;
-
-  width: 350px;
+  width: 300px;
 }
 .about_me-image:hover {
   transform: rotate(0deg);
@@ -30,12 +29,13 @@
 }
 .about_card {
   background: var(--color-bg-variant);
-  border: 1px solid transparent;
+  border: 1px solid rgba(148, 164, 146, 0.416); /* Added border */
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   height: 6rem;
 }
+
 .about_card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);

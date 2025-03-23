@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+body {
+  background-color: #010302;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+.container {
+  overflow: hidden;
+  height: max-content;
+}
+
+/* ====== BANNER SECTION ====== */
+.banner {
+  height: 50vw;
+
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center bottom;
+  transition: opacity 0.3s ease-in-out;
+  animation: moveBackground 6s infinite alternate ease-in-out;
+  opacity: 0;
+  z-index: 0;
+}
+
+/* Ensure only one image is visible */
+.banner .bg:nth-child(1) {
+  background-image: url("../../assets/banner_0.png");
+  animation-duration: 8s;
+  opacity: 1;
+  z-index: 1;
+}
+.banner .bg:nth-child(2) {
+  background-image: url("../../assets/banner_1.png");
+  animation-duration: 10s;
+}
+.banner .bg:nth-child(3) {
+  background-image: url("../../assets/banner_2.png");
+  animation-duration: 7s;
+}
+.banner .bg:nth-child(4) {
+  background-image: url("../../assets/banner_3.png");
+  animation-duration: 9s;
+}
+
+/* Background movement effect */
+@keyframes moveBackground {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(10px) translateX(5px);
+  }
+  100% {
+    transform: translateY(20px) translateX(-5px);
+  }
+}
+
+/* ====== TAB SECTIONS ====== */
+.tab {
+  min-height: 100vh;
+  background-color: #010302;
+  z-index: 1;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab::before {
+  position: absolute;
+  height: 200px;
+  width: 100vw;
+  background: linear-gradient(to top, #010302, transparent);
+  content: "";
+  bottom: 100%;
+  left: 0;
+}
+
+/* TAB Backgrounds */
+.tab.tab1 {
+  background: linear-gradient(to top, #010302 0%, transparent 20%, #010302 80%),
+    url(../../assets/tab1.jpg);
+}
+.tab.tab2 {
+  background: linear-gradient(to top, #010302 0%, transparent 20%, #010302 80%),
+    url("../../assets/tab2.jpg");
+  background-size: cover;
+}
+
+/* Tab content */
+.tab .content {
+  width: 700px;
+  max-width: 90%;
+  color: #eee;
+}
+
+.tab.tab2 .content {
+  width: 900px;
+  max-width: 90%;
+}
+
+.tab.tab2 .content .des {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}

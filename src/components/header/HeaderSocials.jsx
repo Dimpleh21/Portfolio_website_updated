@@ -26,3 +26,11 @@ const HeaderSocials = () => {
 };
 
 export default HeaderSocials;
+/*import React, { useEffect, useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
+import banner0 from "../../assets/banner_0.png";
+import banner1 from "../../assets/banner_1.png";
+import banner2 from "../../assets/banner_2.png";
+import banner3 from "../../assets/banner_3.png";
+import tab1 from "../../assets/tab1.jpg";
+import tab2 from "../../assets/tab2.jpg";*/
