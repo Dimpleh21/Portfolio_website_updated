@@ -1,0 +1,14 @@
+.prof-container {
+  margin-top: 30px;
+  margin-left: 160px;
+  background: transparent;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid var(--color-light);
+  height: auto;
+  width: 930px;
+}
+.text-style {
+  font-size: x-large;
+  color: var(--color-primary);
+}

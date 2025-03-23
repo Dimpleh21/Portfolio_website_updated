@@ -2,6 +2,7 @@ import React from "react";
 import "./Experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 import Internships from "../internships/internships";
+import Profiles from "../profiles/prof";
 const Experience = () => {
   return (
     <>
@@ -167,6 +168,7 @@ const Experience = () => {
       </section>
       <div>
         <Internships />
+        <Profiles />
       </div>
     </>
   );

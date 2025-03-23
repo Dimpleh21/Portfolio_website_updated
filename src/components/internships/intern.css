@@ -1,0 +1,44 @@
+/* intern.css */
+.intern-container {
+  background: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.416);
+  transition: var(--transition);
+  width: 800px;
+  margin-left: 160px;
+  margin-top: 50px;
+  height: auto;
+}
+.text-style {
+  font-size: x-large;
+  color: var(--color-primary);
+}
+.text-style1 {
+  font-size: large;
+}
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.company div {
+  text-align: left;
+}
+
+.image {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.tech-icons {
+  display: flex;
+  gap: 1rem;
+  height: 60px;
+  width: 80px;
+}
