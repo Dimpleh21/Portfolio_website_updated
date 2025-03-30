@@ -5,26 +5,32 @@ import "./Header.css";
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
 import About from "../About/About";
+import Tools from "../Tools";
 
 const Header = () => {
   return (
-    <header>
-      <div className="container header_container">
-        {/* 3D Play/Pause Button */}
+    <>
+      <header>
+        <div className="container header_container">
+          {/* 3D Play/Pause Button */}
 
-        {/* Play/Pause Button */}
+          {/* Play/Pause Button */}
 
-        {/* Equalizer Animation */}
+          {/* Equalizer Animation */}
 
-        <CTA />
-        <About />
-        <HeaderSocials />
+          <CTA />
+          <About />
+          <HeaderSocials />
 
-        <a href="#contact" className="scroll_down">
-          Scroll Down
-        </a>
-      </div>
-    </header>
+          <a href="#contact" className="scroll_down">
+            Scroll Down
+          </a>
+        </div>
+        <div className="Tools">
+          <Tools />
+        </div>
+      </header>
+    </>
   );
 };
 

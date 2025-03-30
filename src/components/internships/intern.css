@@ -10,13 +10,16 @@
   margin-top: 50px;
   height: auto;
 }
+
 .text-style {
   font-size: x-large;
   color: var(--color-primary);
 }
+
 .text-style1 {
   font-size: large;
 }
+
 .company {
   display: flex;
   align-items: center;
@@ -26,6 +29,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
+
 .company div {
   text-align: left;
 }
@@ -36,9 +40,115 @@
   border-radius: 10px;
   object-fit: cover;
 }
+
+/* Tech Icons */
 .tech-icons {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tech-icons img {
   height: 60px;
   width: 80px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* ✅ RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .intern-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+  }
+
+  .company {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image {
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+  }
+
+  .tech-icons {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .tech-icons img {
+    width: 70px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intern-container {
+    padding: 1.8rem;
+  }
+
+  .text-style {
+    font-size: 1.4rem;
+  }
+
+  .text-style1 {
+    font-size: 1.1rem;
+  }
+
+  .company {
+    padding: 10px;
+  }
+
+  .image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tech-icons img {
+    width: 60px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intern-container {
+    padding: 1.2rem;
+  }
+
+  .text-style {
+    font-size: 1.2rem;
+  }
+
+  .text-style1 {
+    font-size: 1rem;
+  }
+
+  .company {
+    flex-direction: column;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .tech-icons {
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  }
+
+  .tech-icons img {
+    width: 50px;
+    height: 35px;
+  }
 }

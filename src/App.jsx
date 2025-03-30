@@ -25,7 +25,7 @@ const App = () => {
       </div>
 
       {/* Foreground Content */}
-      <div style={{ position: "relative", zIndex: 1 }}>
+      <div style={{ position: "relative", zIndex: 1, padding: "20px" }}>
         <Header />
         <Nav />
         {/* <About /> */}

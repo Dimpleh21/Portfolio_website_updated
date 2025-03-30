@@ -109,6 +109,32 @@ const Parallax = () => {
           style={{ ...contentStyle, width: "900px" }}
         ></div>
       </motion.div>
+      <motion.div animate={tabControls} className="tab" style={tabStyle(tab1)}>
+        <div
+          className="content"
+          style={{ ...contentStyle, width: "900px" }}
+        ></div>
+      </motion.div>
+      <motion.div
+        animate={tabControls}
+        className="tab"
+        style={{ ...tabStyle(tab1), height: "20px" }}
+      >
+        <div
+          className="content"
+          style={{ ...contentStyle, width: "900px" }}
+        ></div>
+      </motion.div>
+      <motion.div
+        animate={tabControls}
+        className="tab"
+        style={{ ...tabStyle(tab1), height: "20px" }}
+      >
+        <div
+          className="content"
+          style={{ ...contentStyle, width: "900px" }}
+        ></div>
+      </motion.div>
     </div>
   );
 };

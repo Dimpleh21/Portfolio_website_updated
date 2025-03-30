@@ -1,20 +1,41 @@
 import React from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/6523230.jpg";
-import IMG2 from "../../assets/6523230.jpg";
+import IMG2 from "../../assets/Pf.png";
 import IMG3 from "../../assets/outfit.png";
 
 import IMG8 from "../../assets/p5.png";
 import IMG9 from "../../assets/p6.png";
 import IMG10 from "../../assets/p7.png";
 import IMG11 from "../../assets/p9.png";
-import IMG12 from "../../assets/p10.png";
+import IMG12 from "../../assets/kn.png";
 const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
       <h2>Projects</h2>
       <div className="container portfolio_container">
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <img src={IMG2} alt="" />
+          </div>
+          <h3>PatientFirst</h3>
+          <h4>A Decentralised Health Records management tool.</h4>
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/YATHAGROVER/myntra-hackerramp-submission"
+              className="btn"
+            >
+              Github
+            </a>
+            <a
+              href="https://new-proj-lime.vercel.app/"
+              className="btn btn-primary"
+            >
+              Demo Link
+            </a>
+          </div>
+        </article>
         <article className="portfolio_item">
           <div className="portfolio_item-image">
             <img src={IMG3} alt="" />
@@ -84,6 +105,27 @@ const Portfolio = () => {
             >
               Figma Link
             </a> */}
+          </div>
+        </article>
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <img src={IMG12} alt="" />
+          </div>
+          <h3>E-Commerce Website with Dashboard</h3>
+          <h4>
+            KN Udyog is a dedicated e-commerce platform designed to showcase and
+            sell authentic Jaipuri traditional footwear. The website provides a
+            seamless shopping experience, allowing customers to explore a wide
+            range of handcrafted mojris and juttis while supporting local
+            artisans.
+          </h4>
+          <div className="portfolio_item-cta">
+            <a href="https://github.com" className="btn">
+              Github
+            </a>
+            <a href="https://knudyog.vercel.app/" className="btn btn-primary">
+              Demo Link
+            </a>
           </div>
         </article>
         <article className="portfolio_item">

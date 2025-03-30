@@ -1,168 +1,66 @@
 import React from "react";
 import "./Experience.css";
-import { BsPatchCheckFill } from "react-icons/bs";
 import Internships from "../internships/internships";
 import Profiles from "../profiles/prof";
+
+// Import logos
+import htmlLogo from "../../assets/html.svg";
+import cssLogo from "../../assets/css.webp";
+import jsLogo from "../../assets/js.png";
+import reactLogo from "../../assets/react.svg";
+import nextjsLogo from "../../assets/njs.svg";
+import nodejsLogo from "../../assets/nodejs.svg";
+import mongoLogo from "../../assets/mongo.svg";
+import mysqlLogo from "../../assets/sql.png";
+import awsLogo from "../../assets/aws.png";
+import dockerLogo from "../../assets/docker.png";
+import gitLogo from "../../assets/ts.svg";
+import githubLogo from "../../assets/gt.svg";
+import cppLogo from "../../assets/cpp.png";
+import goLogo from "../../assets/go.jpg";
+import websocket from "../../assets/websocket.png";
+import webRTC from "../../assets/webrtc.jpg";
+import postgre from "../../assets/psql.jpg";
+// Categorized skills with logos
+const skills = [
+  { name: "HTML", logo: htmlLogo },
+  { name: "CSS", logo: cssLogo },
+  { name: "JavaScript", logo: jsLogo },
+  { name: "React.js", logo: reactLogo },
+  { name: "Next.js", logo: nextjsLogo },
+  { name: "Node.js", logo: nodejsLogo },
+  { name: "MongoDB", logo: mongoLogo },
+  { name: "MySQL", logo: mysqlLogo },
+  { name: "AWS", logo: awsLogo },
+  { name: "Docker", logo: dockerLogo },
+  { name: "TypeScript", logo: gitLogo },
+  { name: "GitHub", logo: githubLogo },
+  { name: "C++", logo: cppLogo },
+  { name: "Go", logo: goLogo },
+  { name: "WebRTC", logo: webRTC },
+  { name: "Websockets", logo: websocket },
+  { name: "PostgreSQL", logo: postgre },
+];
+
 const Experience = () => {
   return (
     <>
       <section id="experience">
         <h5>What Skills I Have</h5>
         <h2>My Experience</h2>
-        <div className="container experience_container">
-          <div className="experience_frontend">
-            <h3>Development</h3>
-            <div className="experience_content">
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>HTML</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>CSS</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>JavasScript</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>BootStrap</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>Figma</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>React Js</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>TypeScript</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>MySQL</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>MongoDB</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>ExpressJS</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>Tailwind CSS</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>NextJS</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>Prisma</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>NodeJS</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div className="experience_backend">
-            <h3>Other Skills</h3>
-            <div className="experience_content">
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>OOPs</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>Data Structures and Algorithms</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>Python</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>C++</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              <article className="experience_details">
-                <BsPatchCheckFill className="experience_details-icon" />
-                <div>
-                  <h4>Spark AR studio</h4>
-                  <h6 className="text-light"></h6>
-                </div>
-              </article>
-              {/* <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
-              <div>
-                <h4></h4>
-                <h6 className="text-light"></h6>
+        <div className="experience_card">
+          <div className="skills_grid">
+            {skills.map((skill) => (
+              <div key={skill.name} className="skill_item">
+                <img
+                  src={skill.logo}
+                  alt={skill.name}
+                  title={skill.name}
+                  className="skill_logo"
+                />
+                <p className="skill_name">{skill.name}</p>
               </div>
-            </article> */}
-            </div>
+            ))}
           </div>
         </div>
       </section>

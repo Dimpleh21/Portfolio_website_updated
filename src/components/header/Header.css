@@ -29,6 +29,10 @@ header {
   height: 2rem;
   background: var(--color-primary);
 }
+.Tools {
+  display: flex;
+  margin-top: 0;
+}
 .me {
   background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
@@ -64,5 +68,15 @@ header {
   .header_socials,
   .scroll_down {
     display: none;
+  }
+  .header_container {
+    height: 100vh;
+  }
+  .header_container h1 {
+    font-size: 2.5rem;
+  }
+  .Tools {
+    display: flex;
+    margin-top: 100px;
   }
 }
