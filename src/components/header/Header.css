@@ -5,7 +5,6 @@ header {
 }
 .header_container {
   text-align: center;
-  height: 100vh;
   position: relative;
 }
 .cta {
@@ -18,15 +17,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem;
   position: absolute;
-  left: 0;
-  bottom: 30rem;
 }
 .header_socials::after {
   content: "";
   width: 1px;
-  height: 2rem;
   background: var(--color-primary);
 }
 .Tools {
@@ -36,13 +31,10 @@ header {
 .me {
   background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
-  height: 30rem;
   position: absolute;
-  left: calc(50% - 11rem);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding-bottom: 0rem;
 }
 .me > img {
   height: 20rem;
@@ -50,8 +42,8 @@ header {
 }
 .scroll_down {
   position: absolute;
-  right: -2.3rem;
-  bottom: 32rem;
+  margin-left: 370px;
+  top: 80px;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
@@ -63,7 +55,7 @@ header {
 }
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    min-height: 150vh;
   }
   .header_socials,
   .scroll_down {

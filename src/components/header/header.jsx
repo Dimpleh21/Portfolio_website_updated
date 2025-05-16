@@ -12,16 +12,9 @@ const Header = () => {
     <>
       <header>
         <div className="container header_container">
-          {/* 3D Play/Pause Button */}
-
-          {/* Play/Pause Button */}
-
-          {/* Equalizer Animation */}
-
           <CTA />
-          <About />
           <HeaderSocials />
-
+          <About />
           <a href="#contact" className="scroll_down">
             Scroll Down
           </a>

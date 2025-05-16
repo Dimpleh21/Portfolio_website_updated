@@ -1,6 +1,6 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/6523230.jpg";
+import IMG1 from "../../assets/a1.png";
 import IMG2 from "../../assets/Pf.png";
 import IMG3 from "../../assets/outfit.png";
 
@@ -17,15 +17,34 @@ const Portfolio = () => {
       <div className="container portfolio_container">
         <article className="portfolio_item">
           <div className="portfolio_item-image">
+            <img src={IMG1} alt="" />
+          </div>
+          <h3>WishLink</h3>
+          <h4>
+            A collaborative space to manage, share, and track wishlists
+            effortlessly. Add products, invite friends, and stay aligned all in
+            one place.
+          </h4>
+          <div className="portfolio_item-cta">
+            <a href="https://github.com/Dimpleh21/Wishlink" className="btn">
+              Github
+            </a>
+            <a
+              href="https://wishlink-nu.vercel.app/"
+              className="btn btn-primary"
+            >
+              Demo Link
+            </a>
+          </div>
+        </article>
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
             <img src={IMG2} alt="" />
           </div>
           <h3>PatientFirst</h3>
           <h4>A Decentralised Health Records management tool.</h4>
           <div className="portfolio_item-cta">
-            <a
-              href="https://github.com/YATHAGROVER/myntra-hackerramp-submission"
-              className="btn"
-            >
+            <a href="https://github.com/Dimpleh21/Meddit" className="btn">
               Github
             </a>
             <a

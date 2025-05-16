@@ -2,7 +2,7 @@
 .intern-container {
   background: var(--color-bg-variant);
   padding: 2.4rem 5rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.416);
   transition: var(--transition);
   width: 800px;
@@ -64,8 +64,7 @@
 @media (max-width: 1024px) {
   .intern-container {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
     padding: 2rem;
   }
 

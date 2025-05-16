@@ -11,10 +11,10 @@ const About = () => {
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className="container about_container">
+      <div className="about_container">
         <div className="about_me">
           <div className="about_me-image">
-            <img src={ME} alt="" />
+            <img src={ME} alt="My Image" />
           </div>
         </div>
 
@@ -29,20 +29,16 @@ const About = () => {
             <article className="about_card">
               <VscFolderLibrary className="about_icon" />
               <h5>Projects</h5>
-
               <h6>Scroll down</h6>
             </article>
           </div>
 
           <p>
             I'm Dimple Harjani, a Software Development and Web Designing
-            enthusiast. With a knack for creating something creative, I try to
-            craft some of the unique ideas for websites that leaves a lasting
-            impact. When I'm not immersed in doing something technical, you'll
-            find me baking, painting and sketching. Let's connect and explore
-            the exciting possibilities together!
+            enthusiast. I love creating unique websites that leave an impact.
+            When I'm not coding, I enjoy baking, painting, and sketching.
           </p>
-          <a href="#contact" className="btn btn-primary hi">
+          <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
         </div>
