@@ -5,7 +5,7 @@ import IMG2 from "../../assets/Pf.png";
 import IMG3 from "../../assets/outfit.png";
 
 import IMG8 from "../../assets/p5.png";
-import IMG9 from "../../assets/p6.png";
+import IMG9 from "../../assets/p1.png";
 import IMG10 from "../../assets/p7.png";
 import IMG11 from "../../assets/p9.png";
 import IMG12 from "../../assets/kn.png";
@@ -85,14 +85,11 @@ const Portfolio = () => {
           </div>
           <h3>CabZEE</h3>
           <h4>
-            A taxi-booking platform for NITH students that makes their ride
-            hassle free and much more convenient.
+            A Carpooling platform for NITH students that makes their ride hassle
+            free and much more convenient.
           </h4>
           <div className="portfolio_item-cta">
-            <a
-              href="https://github.com/preyanshu/cabzee_frontend"
-              className="btn"
-            >
+            <a href="https://github.com/Dimpleh21/cabZee" className="btn">
               Github
             </a>
             {/* <a
